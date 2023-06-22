@@ -1,0 +1,5 @@
+com\knitkota\bigdata\speedtest\MainClass.class
+com\knitkota\bigdata\speedtest\MapperPercentageClass.class
+com\knitkota\bigdata\speedtest\ReducerGoingAbove65Class.class
+com\knitkota\bigdata\speedtest\ReducerPercentageOfGoingAbove65Class.class
+com\knitkota\bigdata\speedtest\MapperClass.class
