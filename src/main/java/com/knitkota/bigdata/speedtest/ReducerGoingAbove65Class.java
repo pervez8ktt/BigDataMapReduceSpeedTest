@@ -14,21 +14,20 @@ public class ReducerGoingAbove65Class extends Reducer<Text, DoubleWritable, Text
 			Reducer<Text, DoubleWritable, Text, DoubleWritable>.Context context)
 			throws IOException, InterruptedException {
 
-		double totalValues = 0;
+		double speedCounter = 0;
 
 		for (DoubleWritable v : value) {
 
-			if (!(key.toString().equals("Above65") || key.toString().equals("Total"))) {
-
-				if (v.get() > 65) {
-					totalValues++;
-				}
-
+			if (v.get() > 65) {
+				speedCounter++;
 			}
 
 		}
 
-		context.write(key, new DoubleWritable(totalValues));
+		if(speedCounter>0) {
+			context.write(key, new DoubleWritable(speedCounter));
+		}
+		
 
 	}
 

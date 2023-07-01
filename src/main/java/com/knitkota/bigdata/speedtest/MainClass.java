@@ -23,15 +23,9 @@ public class MainClass {
 
 			// job.setCombinerClass(ReduceClass.class);
 
-			String task = args[2];
-
-			if (task.equals("task1")) {
-				job.setMapperClass(MapperClass.class);
-				job.setReducerClass(ReducerGoingAbove65Class.class);
-			} else {
-				job.setMapperClass(MapperPercentageClass.class);
-				job.setReducerClass(ReducerPercentageOfGoingAbove65Class.class);
-			}
+			job.setMapperClass(MapperClass.class);
+			job.setReducerClass(ReducerGoingAbove65Class.class);
+			
 
 			job.setNumReduceTasks(1);
 
