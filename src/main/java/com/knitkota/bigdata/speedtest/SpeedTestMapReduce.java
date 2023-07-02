@@ -10,7 +10,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class MainClass {
+public class SpeedTestMapReduce {
 
 	public static void main(String[] args) {
 		try {
@@ -19,7 +19,7 @@ public class MainClass {
 			// conf.set("name", "value")
 			// conf.set("mapreduce.input.fileinputformat.split.minsize", "134217728");
 			Job job = Job.getInstance(conf, "Assigenment One");
-			job.setJarByClass(MainClass.class);
+			job.setJarByClass(SpeedTestMapReduce.class);
 
 			// job.setCombinerClass(ReduceClass.class);
 

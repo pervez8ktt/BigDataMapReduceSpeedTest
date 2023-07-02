@@ -1,5 +1,8 @@
 # Assigment
 
+This project is Maven project
+
+
 # How to start hdfs:
 
 ```cmd
